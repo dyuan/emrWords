@@ -12,7 +12,7 @@ public class WordCount {
         Configuration conf = new Configuration();
         
         Job job = new Job(conf, "WordCount");
-        job.setNumReduceTasks(2);
+        job.setNumReduceTasks(3);
         job.setJarByClass(WordCount.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
